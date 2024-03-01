@@ -33,7 +33,7 @@
             label1 = new Label();
             label2 = new Label();
             btnCalcola = new Button();
-            comboBox1 = new ComboBox();
+            cmbOperatore = new ComboBox();
             label3 = new Label();
             lblRisultato = new Label();
             SuspendLayout();
@@ -78,15 +78,16 @@
             btnCalcola.TabIndex = 2;
             btnCalcola.Text = "=";
             btnCalcola.UseVisualStyleBackColor = true;
+            btnCalcola.Click += btnCalcola_Click;
             // 
-            // comboBox1
+            // cmbOperatore
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "-", "+", "*", "/" });
-            comboBox1.Location = new Point(229, 161);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(71, 28);
-            comboBox1.TabIndex = 3;
+            cmbOperatore.FormattingEnabled = true;
+            cmbOperatore.Items.AddRange(new object[] { "-", "+", "*", "/" });
+            cmbOperatore.Location = new Point(232, 161);
+            cmbOperatore.Name = "cmbOperatore";
+            cmbOperatore.Size = new Size(71, 28);
+            cmbOperatore.TabIndex = 3;
             // 
             // label3
             // 
@@ -111,7 +112,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(508, 361);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbOperatore);
             Controls.Add(btnCalcola);
             Controls.Add(lblRisultato);
             Controls.Add(label3);
@@ -132,7 +133,7 @@
         private Label label1;
         private Label label2;
         private Button btnCalcola;
-        private ComboBox comboBox1;
+        private ComboBox cmbOperatore;
         private Label label3;
         private Label lblRisultato;
     }
