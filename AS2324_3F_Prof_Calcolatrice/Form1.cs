@@ -31,6 +31,13 @@ namespace AS2324_3F_Prof_Calcolatrice
             }
 
             lblRisultato.Text = "Risultato " + risultato.ToString();
+
+            // colora il risultato con rosso sui numeri negativi
+            if (risultato<0)
+                lblRisultato.ForeColor = Color.Red;
+            else
+                lblRisultato.ForeColor = Color.Black;
+
         }
     }
 }
